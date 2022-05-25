@@ -76,7 +76,6 @@ const MainScreen: React.FC = (props: any) => {
                 props.onPress([ current, ...props.cart])
                 }
         } else {
-            console.log(props.main)
             const current =  props.main.find((obj: InitialStateType) => obj.id === key);
             current.count++
             props.onPress([current])
