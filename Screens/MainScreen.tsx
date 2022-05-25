@@ -48,10 +48,8 @@ const MainScreen: React.FC = (props: any) => {
     const toggleSwitch = () => {
         setIsEnabled(previousState => !previousState)
         if(props.switch) {
-            console.log(props.switch)
             props.unSwitch()
         } if (!props.switch) {
-            console.log(props.switch)
             props.onSwitch()}
     }
 
