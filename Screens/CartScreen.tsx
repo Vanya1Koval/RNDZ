@@ -46,7 +46,7 @@ const CartScreen: React.FC = (props: any) => {
     const pressFuncMinus = (key: any) => {
 
         const current =  props.cart.find((obj: any) => obj.id === key);
-        if (current.number === 1) {
+        if (current.count === 1) {
             const index = props.cart.findIndex((obj: any) => obj.id === key);
             const current =  props.main.find((obj: any) => obj.id === key);
             current.cart = ''
